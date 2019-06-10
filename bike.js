@@ -45,6 +45,7 @@ class Bike {
         this.show = () => {
             // Creates rectangles of the given colour
             fill(this.color)
+            stroke(0, 0, 0, 0)
             for (i = 0; i < this.total; i++) {
                 rect(this.tail[i].x, this.tail[i].y, scale, scale)
             }
