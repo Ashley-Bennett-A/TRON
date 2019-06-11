@@ -7,10 +7,13 @@ body {
     background-color: #0C141E;
     color: #D8DAE7;
     text-align: center;
+    display: inline;
 }
 
 canvas {
-    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .controls {
@@ -46,4 +49,8 @@ button:hover {
 button:active {
     background: #1b435e;
     transform: scale(0.95)
+}
+
+button:focus {
+    outline: 0;
 }
