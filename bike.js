@@ -15,19 +15,6 @@ class Bike {
         this.color = color
         this.lives = 3
 
-        //  On self kill
-        this.death = () => {
-            for (i = 0; i < this.tail.length; i++) {
-                //  Checks if head position intersects tail
-                let pos = this.tail[i]
-                let d = dist(this.x, this.y, pos.x, pos.y)
-                if (d < 1) {
-                    //  Resets
-                    this.total = 0
-                    this.tail = []
-                }
-            }
-        }
 
         this.update = () => {
             //  Increases in size per tick
