@@ -54,6 +54,7 @@ function draw() {
             textSize(42);
             textAlign(CENTER, CENTER)
             stroke(51)
+            textFont("Orbitron")
             fill(136, 200, 222, 50)
             text(`Lives:${lives1}`, width / 2, 20)
             fill(251, 233, 85, 50)
@@ -134,14 +135,14 @@ function draw() {
             if (bikes[0].lives < 1) {
                 let win = "GAME OVER! Player 2 Wins!"
                 fill("#FBE955")
-                textSize(42);
+                textSize(38);
                 textAlign(CENTER, CENTER)
                 text(win, width / 2, height / 2);;
                 noLoop()
             } else if (bikes[1].lives < 1) {
                 let win = "GAME OVER! Player 1 Wins!"
                 fill("#88C8DE")
-                textSize(42);
+                textSize(38);
                 textAlign(CENTER, CENTER)
                 text(win, width / 2, height / 2);;
                 noLoop()
