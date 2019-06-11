@@ -8,7 +8,11 @@ let bikes = []
 //  Positions of bikes
 let position = [
     [20, 20],
-    [20, 560]
+    [560, 560]
+]
+let direction = [
+    [1, 0],
+    [-1, 0]
 ]
 // Colours of bikes
 let color = ["#88C8DE", "#FBE955"]
@@ -24,11 +28,12 @@ function setup() {
     for (i = 0; i < players; i++) {
         bikes[i] = new Bike(
             position[i],
-            color[i]
+            color[i],
+            direction[i]
         )
     }
     //  Set framerate
-    frameRate(15)
+    frameRate(25)
 }
 
 
@@ -67,9 +72,9 @@ function draw() {
                     bikes[0].y = 20
                     bikes[0].xspeed = 1
                     bikes[0].yspeed = 0
-                    bikes[1].x = 20
+                    bikes[1].x = 560
                     bikes[1].y = 560
-                    bikes[1].xspeed = 1
+                    bikes[1].xspeed = -1
                     bikes[1].yspeed = 0
                     bikes[1].total = 0
                     bikes[1].tail = []
@@ -77,9 +82,9 @@ function draw() {
                     bikes[1].total = 0
                     bikes[1].tail = []
                     bikes[1].lives--
-                    bikes[1].x = 20
+                    bikes[1].x = 560
                     bikes[1].y = 560
-                    bikes[1].xspeed = 1
+                    bikes[1].xspeed = -1
                     bikes[1].yspeed = 0
                     bikes[0].x = 20
                     bikes[0].y = 20
@@ -98,9 +103,9 @@ function draw() {
                     bikes[1].total = 0
                     bikes[1].tail = []
                     bikes[1].lives--
-                    bikes[1].x = 20
+                    bikes[1].x = 560
                     bikes[1].y = 560
-                    bikes[1].xspeed = 1
+                    bikes[1].xspeed = -1
                     bikes[1].yspeed = 0
                     bikes[0].x = 20
                     bikes[0].y = 20
@@ -112,9 +117,9 @@ function draw() {
                     bikes[1].total = 0
                     bikes[1].tail = []
                     bikes[0].lives--
-                    bikes[1].x = 20
+                    bikes[1].x = 560
                     bikes[1].y = 560
-                    bikes[1].xspeed = 1
+                    bikes[1].xspeed = -1
                     bikes[1].yspeed = 0
                     bikes[0].x = 20
                     bikes[0].y = 20

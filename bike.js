@@ -1,13 +1,13 @@
 //  Create bike class
 class Bike {
     //  Taking position and color as parameters
-    constructor(xy, color) {
+    constructor(xy, color, direction) {
         //  Initial position
         this.x = xy[0];
         this.y = xy[1];
         //  Direction
-        this.xspeed = 1;
-        this.yspeed = 0;
+        this.xspeed = direction[0];
+        this.yspeed = direction[1];
         //  Size
         this.total = 0;
         this.tail = []
